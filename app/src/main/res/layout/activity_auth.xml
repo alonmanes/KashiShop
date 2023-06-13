@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.AuthActivity">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAddImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ADD IMAGE"
+        android:visibility="gone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPhoneContainer"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Enter your phone"
+            android:inputType="phone"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etUserNameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etCityContainer"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:hint="Enter your city"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rgUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rbYouth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Youth"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rbElderly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Elderly" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember me" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_bg"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/tvSwitchCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haven't user? REGISTER!"
+        android:textColor="@color/white" />
+</LinearLayout>

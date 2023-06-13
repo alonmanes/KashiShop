@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/white_base"
+    android:layout_margin="5dp"
+    android:id="@+id/lBackground">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        android:clickable="false"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="false">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_margin="5dp"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:clickable="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_gravity="right|bottom"
+            android:clickable="false"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_home_work_24"
+                android:clickable="false"/>
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:gravity="right"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
